@@ -14,6 +14,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    assetModuleFilename: 'assets/images/[name][ext]'
   },
   module: {
     rules: [
@@ -47,6 +48,19 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
         exclude: /\.module\.css$/,
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/images/[name][ext]'
+        }
+      },
+      {
+        test: /\.html$/,
+        use: [
+          'html-loader'
+        ]
       }
     ]
   },

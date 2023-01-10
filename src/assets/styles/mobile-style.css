@@ -1,0 +1,171 @@
+@media (max-width: 480px) {
+    header > div {
+        width: 95%;
+    }
+
+    .disconnected-user ul {
+        justify-content: flex-end;
+    }
+
+    #courses-link, #register-link, #login-link a {
+        display: none;
+    }
+
+    #login-link ion-icon {
+        display: block;
+    }
+
+    .disconnected-user ion-icon {
+        font-size: 24px;
+        position: static;
+    }
+
+    #user-panel-toggler ion-icon:nth-child(3) {
+        display: block;
+        font-size: 24px;
+        position: absolute;
+        top: 8px;
+        right: 0px;
+    }
+
+    #user-panel-toggler h2:first-child, #user-panel-toggler > ion-icon:nth-child(2) {
+        display: none;
+    }
+
+    #user-panel {
+        width: 105vw;
+        height: 100vh;
+        background-color: #FFFFFF;
+        filter: none;
+        position: absolute;
+        top: 0px;
+        right: -2.5vw;
+        transform-origin: right center;
+        transition: all 0.2s ease-in;
+    }
+
+    .closed {
+        transform: rotateY(-90deg);
+    }
+
+    #user-panel > div, #user-panel img, #user-panel h2, #user-panel > .dividing-line,
+    #user-panel ul li:nth-child(4), #user-panel ul li:nth-child(5),
+    #user-panel ul li:nth-child(8), #user-panel ul div:nth-child(9) {
+        display: block;
+    }
+
+    .logo {
+        color: black;
+    }
+
+    #user-panel > div:first-child {
+        width: 28%;
+        height: 100%;
+        background-color: #000000;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    #user-panel > div:first-child ion-icon {
+        font-size: 12px;
+        color: #FFFFFF;
+        position: absolute;
+        top: 7%;
+        left: calc(50%);
+    }
+
+    #user-panel > img:nth-child(2), #user-panel h2:nth-child(3),
+    #user-panel > div:nth-child(5), #user-panel ul {
+        position: absolute;
+        left: 33%;
+    }
+
+    #user-panel > img:nth-child(2) {
+        top: 5%;
+    }
+
+    #user-panel h2, #user-panel span {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        display: flex;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #858479;
+        top: 16%;
+    }
+
+    #user-panel span {
+        color: #000000;
+    }
+
+    #user-panel > img:nth-child(4) {
+        position: absolute;
+        top: calc(16% - 2px);
+        right: 5%;
+    }
+
+    #user-panel > div:nth-child(5) {
+        width: 63%;
+        top: 26%;
+    }
+
+    #user-panel ul {
+        width: 63%;
+        height: 65%;
+        align-items: flex-start;
+        justify-content: space-between;
+        top: calc(36% - 24px);
+    }
+
+    #user-panel ul li:nth-child(8) {
+        width: 100%;
+        height: 40px;
+        position: relative;
+    }
+
+    #user-panel ul h3 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: #1D1A05;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    #user-panel a {
+        font-size: 12px;
+        letter-spacing: normal;
+    }
+
+    #user-panel ul li:nth-child(8) div {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    #user-panel ul li ion-icon {
+        position: static;
+        font-size: 13px;
+        color: #858479;
+        margin-right: 9px;
+    }
+
+    #user-panel ul li:nth-child(8) a {
+        letter-spacing: 1px;
+    }
+
+    #user-panel ul li:nth-child(5) {
+        margin-bottom: 20%;
+    }
+
+    #user-panel ul li:nth-child(6) {
+        display: none;
+    }
+}

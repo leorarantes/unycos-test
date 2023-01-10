@@ -6,10 +6,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Mireia Belmonte te da la bienvenida al camino que te llevará a lo más alto de la natación. Conocerás tu técnica, tu entrenamiento y mucho más en este curso.">
         <meta name="robots" content="index, follow">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <title>Curso de natación impartido por Mireia Belmonte | Unycos</title>
     </head>
     <body>
-      <h1>Hello, HTML</h1>
-      <div class="slider-react"></div>
+      <header>
+        <div>
+          <img class="logo" href="localhost:9004" src="./assets/images/logo-white.svg">
+          <nav class="disconnected-user">
+            <ul>
+              <li id="courses-link"><a href="http://localhost:9004/cursos">Cursos</a></li>
+              <li id="register-link"><a href="http://localhost:9004/register">Register</a></li>
+              <li id="login-link">
+                <a href="http://localhost:9004/log-in">Log in</a>
+                <ion-icon name="person-outline" href="http://localhost:9004/log-in"></ion-icon>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </header>
+      <div id="header-shadow"></div>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
