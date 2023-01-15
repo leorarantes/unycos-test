@@ -1,0 +1,463 @@
+@media (max-width: 768px) {
+    main {
+        padding: 40px 0px 0px 0px;
+    }
+
+    #title {
+        background-image: url("../../images/mireia-swimming.svg");
+        background-size: 100% 107vw;
+        border: none;
+        width: 100%;
+        height: 107vw;
+        min-width: 0px;
+        min-height: 0px;
+        margin-bottom: 35px;
+    }
+
+    #title h1 {
+        width: 310px;
+        height: 52px;
+        font-size: 28px;
+        line-height: 32px;
+        letter-spacing: auto;
+    }
+
+    #title h1 span {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .filled, .outline {
+        width: 95%;
+    }
+
+    main>div:nth-child(3) {
+        width: 100%;
+        min-width: 0px;
+        justify-content: space-evenly;
+        padding: 24px 0px 29px 0px;
+    }
+
+    main>div:nth-child(3) button {
+        display: none;
+    }
+
+    main>div:nth-child(3) div {
+        width: 100px;
+        height: 74px;
+        flex-direction: column;
+    }
+
+    main>div:nth-child(3) h3 {
+        font-weight: 700;
+        letter-spacing: auto;
+        text-align: center;
+    }
+
+    main>h2:nth-child(4) {
+        display: flex;
+        width: 290px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    main>button:nth-child(2), main>button:nth-child(5) {
+        display: flex;
+    }
+
+    .outline {
+        height: 44px;
+        background: none;
+        border: solid 2px #FFFFFF;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 36px 0px 36px 0px;
+    }
+
+    main>div:nth-child(6) {
+        width: 95%;
+        height: 242px;
+        min-width: 0px;
+    }
+
+    main>h2:nth-child(7) {
+        display: none;
+    }
+
+    main>ul:nth-child(8) {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    main>ul:nth-child(8) li img {
+        height: 30px;
+    }
+
+    main>ul:nth-child(8) li h3 {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: normal;
+        text-transform: none;
+    }
+
+    main>ul:nth-child(8) li h3 {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: normal;
+        text-transform: none;
+    }
+
+    main>button:nth-child(9) {
+        display: none;
+    }
+
+    main>h2, .highlights h2, #mas-cursos h2, #contact h2, #comments h2, #related-articles h2 {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: normal;
+    }
+
+    .highlights {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .highlights ul li:last-child, .highlights ul div:nth-child(8), .highlights p {
+        display: none;
+    }
+
+    .highlights ul {
+        position: static;
+        width: 96%;
+    }
+
+    .highlights ul li {
+        width: 100%;
+        height: 44px;
+        position: relative;
+    }
+
+    .highlights ul span, .highlights ul h3 {
+        font-size: 14px;
+        line-height: 16px;
+        position: absolute;
+        top: calc(50% - 8px);
+    }
+
+    .highlights ul li span {
+        color: #D8D7CE;
+        left: 0px;
+    }
+
+    .highlights ul li h3 {
+        color: #858479;
+        left: 26px;
+    }
+
+    .highlights ul li ion-icon {
+        visibility: visible;
+        font-size: 12px;
+        color: #D8D7CE;
+        position: absolute;
+        top: calc(50% - 6px);
+        right: 0px;
+    }
+
+    .highlights button {
+        position: static;
+        width: 100%;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .highlights ul div {
+        background-color: #1D1A05;
+    }
+
+    #mas-cursos {
+        width: 95%;
+        min-width: 0px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #mas-cursos nav, #mas-cursos ul, #mas-cursos h2 {
+        width: 100%;
+    }
+
+    #mas-cursos h2 {
+        margin-bottom: 8px;
+    }
+
+    #mas-cursos ul {
+        display: block;
+    }
+
+    #mas-cursos li {
+        width: 95vw;
+        height: 50vw;
+        opacity: 1;
+        border-radius: 7px;
+        background-position: left top;
+        background-repeat: repeat;
+        margin-bottom: 5px;
+        margin-right: 0px;
+    }
+
+    #mas-cursos h3 {
+        font-size: 13px;
+        line-height: 15px;
+        letter-spacing: normal;
+    }
+
+    #mas-cursos h3 span {
+        font-size: 10px;
+    }
+
+    #mas-cursos li:nth-child(2) {
+        display: none;
+    }
+
+    #contact {
+        width: 95%;
+        height: fit-content;
+        display: block;
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    #contact h2, #contact input, #contact div {
+        position: static;
+    }
+
+    #contact h2 {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+
+    #contact input[type=text] {
+        width: 100%;
+        height: 35px;
+        padding-left: 15px;
+        margin-bottom: 8px;
+    }
+
+    #contact input[type=text], #contact input[type=text]::placeholder {
+        font-size: 14px;
+    }
+
+    #contact div {
+        width: 100%;
+        height: 28px;
+        margin-bottom: 8px;
+    }
+
+    #contact input[type=checkbox] {
+        width: 25px;
+        height: 25px;
+        background-color: #FFFFFF;
+        border: none;
+        border-radius: 8px;
+        margin-left: 0px;
+    }
+
+    #contact label {
+        font-size: 13px;
+        line-height: 15px;
+        color: #858479;
+        text-align: start;
+        margin-left: 4px;
+    }
+
+    #contact label span {
+        color: #FFFFFF;
+    }
+
+    #contact div:nth-child(7) label {
+        width: 220px;
+    }
+
+    #contact input[type=submit] {
+        width: 100%;
+    }
+
+    #comments {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    #comments h3, h4, p, span {
+        text-align: start;
+    }
+
+    #comments h2 {
+        margin-bottom: 10px;
+    }
+
+    #comments > div {
+        width: 100%;
+        height: 45vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    #comments article {
+        width: 86vw;
+        height: 100%;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        margin-right: 8px;
+    }
+
+    #comments>div .dividing-line, #comments article div:last-child .dividing-line {
+        display: none;
+    }
+
+    .student-picture {
+        display: none;
+    }
+
+    #comments article>div:last-child, .comment {
+        width: 100%;
+        height: 100%;
+    }
+
+    .answer {
+        display: none;
+    }
+
+    .comment {
+        position: relative;
+    }
+
+    .comment h4 {
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 12px;
+        text-align: start;
+        color: #000000;
+        position: absolute;
+        bottom: 0px;
+        right: 8px;
+    }
+
+    .comment ion-icon, .comment span {
+        display: none;
+    }
+
+    .comment p {
+        width: calc(100% - 16px);
+        font-size: 14px;
+        line-height: 16px;
+        color: #333333;
+        position: absolute;
+        top: 3px;
+        left: 8px;
+    }
+
+    #comments article:nth-child(6) .student-picture {
+        display: none;
+    }
+
+    #comments button {
+        display: none;
+    }
+
+    #students-rating {
+        width: 90%;
+        height: 88px;
+        position: relative;
+        margin-top: 25px;
+    }
+    
+    #students-rating img {
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        left: 0px;
+    }
+    
+    #students-rating img, #students-rating h3, #students-rating h4 {
+        position: absolute;
+    }
+    
+    #students-rating h3 {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 700;
+        text-align: start;
+        color: #D8D7CE;
+        text-transform: uppercase;
+        letter-spacing: normal;
+        text-transform: uppercase;
+        top: 0px;
+        left: 60px;
+    }
+
+    #students-rating h4 {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #858479;
+        display: block;
+        text-transform: none;
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    #related-articles {
+        width: 95%;
+        margin-top: 0px;
+    }
+
+    #related-articles h2 {
+        margin-bottom: 15px;
+    }
+    
+    #related-articles ul {
+        width: 100%;
+        display: block;
+    }
+    
+    #related-articles li {
+        width: 100%;
+    }
+
+    #related-articles button {
+        width: 240px;
+        margin-top: 4px;
+    }
+    
+    #related-articles h3 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    #related-articles h4 {
+        font-size: 12px;
+        line-height: 13px;
+    }
+    
+    #related-articles .dividing-line {
+        background-color: #1D1A05;
+    }
+}

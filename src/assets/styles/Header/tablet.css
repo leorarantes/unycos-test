@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+    header > div {
+        width: 93%;
+    }
+
+    .disconnected-user {
+        width: 160px;
+    }
+
+    #user-panel {
+        width: 140px;
+        height: 145px;
+    }
+
+    #user-panel ul li:first-child {
+        margin-top: 4%;
+    }
+
+    #user-panel a {
+        font-size: 9px;
+    }
+
+    header a, header h2, header span {
+        font-size: 10px;
+    }
+
+    header ion-icon {
+        font-size: 10px;
+        top: 16px;
+    }
+
+    .connected-user ul:first-child li:last-child h2 {
+        right: 18px;
+    }
+
+    .connected-user {
+        width: 150px;
+    }
+}
