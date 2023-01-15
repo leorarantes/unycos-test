@@ -109,7 +109,8 @@ main>div:nth-child(6) {
     display: flex;
 }
 
-main>h2, .lessons h2, .highlights h2, #mas-cursos h2, #contact h2, #comments h2, #related-articles h2 {
+main>h2, .lessons h2, .highlights h2, #mas-cursos h2, #contact h2, #comments h2, 
+#related-articles h2, body > article h2 {
     font-size: 2vw;
     line-height: 1.666666vw;
     text-align: center;
@@ -622,8 +623,29 @@ main>button:nth-child(9) {
     background-color: #1D1A05;
 }
 
-#related-articles button {
+#related-articles button, body > article .outline {
     width: 25.555555vw;
     border: solid 2px #FFFFFF;
     color: #FFFFFF;
+}
+
+body > article {
+    background-image: url(../../images/blog-background.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 23.888888vw;
+    box-shadow: inset 0px 0px 1px #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0px 35px 0px;
+}
+
+body > article h3 {
+    font-size: 1.3888888vw;
+    line-height: 1.7vw;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 2.7777777vw 0px 3.5416666vw 0px;
 }

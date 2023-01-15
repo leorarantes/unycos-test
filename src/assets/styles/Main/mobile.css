@@ -460,4 +460,8 @@
     #related-articles .dividing-line {
         background-color: #1D1A05;
     }
+
+    body > article {
+        display: none;
+    }
 }
