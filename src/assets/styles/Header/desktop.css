@@ -175,7 +175,7 @@ header ion-icon {
     color: #858479;
 }
 
-#user-panel ul li > a:hover {
+#user-panel ul li:nth-child(2) > a {
     color: #C5AF19;
 }
 

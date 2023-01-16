@@ -1,17 +1,19 @@
 import React from "react";
 import { createRoot } from 'react-dom/client';
-
 import Slider from "./react/components/Slider";
-//import general styles
+
+//import body styles
 import "./assets/styles/reset.css";
 import "./assets/styles/index.css";
-// import <header> styles
+// import header styles
 import "./assets/styles/Header/desktop.css";
-import "./assets/styles/Header/tablet.css";
 import "./assets/styles/Header/mobile.css";
-// import <main> styles
+// import main styles
 import "./assets/styles/Main/desktop.css";
 import "./assets/styles/Main/mobile.css";
+// import footer styles
+import "./assets/styles/Footer/desktop.css";
+import "./assets/styles/Footer/mobile.css";
 
 // import images
 import BlackLogo from "./assets/images/logo-black.svg";
@@ -19,12 +21,15 @@ import Notification from "./assets/images/notification.svg";
 import NoNotification from "./assets/images/no-notification.svg";
 import LikeIcon from "./assets/images/like-icon.svg";
 import StarIcon from "./assets/images/star-icon.svg";
+import FacebookIcon from "./assets/images/facebook-icon.svg";
+import InstagramIcon from "./assets/images/instagram-icon.svg";
+import TwitterIcon from "./assets/images/twitter-icon.svg";
+import YoutubeIcon from "./assets/images/youtube-icon.svg";
 
 import getToken from "./services/getToken";
 import api from "./services/api";
 
-// get device type
-const deviceType = window.matchMedia("(max-width: 480px)").matches ? "mobile" : "desktop";
+const deviceType = window.matchMedia("(max-width: 768px)").matches ? "mobile" : "desktop";
 
 // get token if user is connected
 localStorage.setItem("unycos-test-token", "token");
@@ -56,19 +61,6 @@ function loadHeader(token) {
         const userPanelToggler = document.getElementById("user-panel-toggler");
         userPanelToggler.addEventListener('click', handleUserPanelToggle, true);
 
-        // add whatsapp redirector hover effect
-        if (deviceType === "mobile") {
-            const whatsappRedirector = document.getElementById("whatsapp-redirector");
-            whatsappRedirector.addEventListener("mouseover", () => {
-                whatsappRedirector.firstElementChild.style.color = "#C5AF19";
-                whatsappRedirector.lastElementChild.style.color = "#C5AF19";
-            });
-            whatsappRedirector.addEventListener("mouseout", () => {
-                whatsappRedirector.firstElementChild.style.color = "#858479";
-                whatsappRedirector.lastElementChild.style.color = "#858479";
-            });
-        }
-
         loadMain();
     }
 }
@@ -84,6 +76,29 @@ function loadMain() {
     handleMoreCoursesPosition();
     
     handleStudentsRatingPosition();
+
+    loadFooter();
+}
+
+function loadFooter() {
+    handleSocialNetworksPosition();
+}
+
+function handleSocialNetworksPosition() {
+    const nav = document.createElement("nav");
+    nav.setAttribute("id", "social-networks");
+
+    nav.innerHTML = `
+        <ul>
+            <li><img src=${FacebookIcon} href="https://www.facebook.com/"></li>
+            <li><img src=${InstagramIcon} href="https://www.instagram.com/"></li>
+            <li><img src=${TwitterIcon} href="https://www.twitter.com/"></li>
+            <li><img src=${YoutubeIcon} href="https://www.youtube.com/"></li>
+        </ul>
+    `;
+
+    const element = document.querySelector(outputByDeviceType("main h2:nth-child(16)", "footer"));
+    element.insertAdjacentElement(outputByDeviceType("afterend", "afterbegin"), nav);
 }
 
 function handleStudentsRatingPosition() {
