@@ -32,7 +32,7 @@ import api from "./services/api";
 const deviceType = window.matchMedia("(max-width: 768px)").matches ? "mobile" : "desktop";
 
 // get token if user is connected
-localStorage.setItem("unycos-test-token", "token");
+localStorage.removeItem("unycos-test-token", "token");
 const token = getToken();
 
 // load page
@@ -40,9 +40,8 @@ loadHeader(token);
 
 function loadHeader(token) {
     // check if user is connected
-    const { data } = api.getUserInfo(token);
-    // if user is connected
-    if (data) {
+    try {
+        const { data } = api.getUserInfo(token);
         // ensure name doesn't overflow element
         if (data.name.length > 6) {
             data.name = data.name.slice(0, 4) + '...';
@@ -61,6 +60,9 @@ function loadHeader(token) {
         const userPanelToggler = document.getElementById("user-panel-toggler");
         userPanelToggler.addEventListener('click', handleUserPanelToggle, true);
 
+        loadMain();
+    } catch(error) {
+        console.log(error.message);
         loadMain();
     }
 }

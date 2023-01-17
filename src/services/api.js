@@ -16,12 +16,15 @@ export async function getSliderInfo(apiKey) {
 };
 
 export function getUserInfo(token) {
-    return {
-        data: {
-            name: "Teste",
-            notifications: ["notification"]
-        }
-    };
+    if (token) {
+        return {
+            data: {
+                name: "Teste",
+                notifications: ["notification"]
+            }
+        };
+    }
+    throw new Error("ERROR 401: Unauthorized.");
 };
 
 export default {
