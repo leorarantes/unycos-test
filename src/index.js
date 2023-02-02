@@ -32,7 +32,7 @@ import api from "./services/api";
 const deviceType = window.matchMedia("(max-width: 768px)").matches ? "mobile" : "desktop";
 
 // get token if user is connected
-localStorage.removeItem("unycos-test-token", "token");
+localStorage.setItem("unycos-test-token", "token");
 const token = getToken();
 
 // load page
