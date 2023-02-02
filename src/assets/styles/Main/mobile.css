@@ -246,14 +246,18 @@
         margin-bottom: 18px;
     }
 
-    #contact input[type=text] {
+    #contact input:nth-child(2), #contact input:nth-child(3),
+    #contact input:nth-child(4), #contact input:nth-child(5) {
         width: 100%;
         height: 35px;
         padding-left: 15px;
         margin-bottom: 8px;
     }
 
-    #contact input[type=text], #contact input[type=text]::placeholder {
+    #contact input:nth-child(2), #contact input:nth-child(2)::placeholder,
+    #contact input:nth-child(3), #contact input:nth-child(3)::placeholder,
+    #contact input:nth-child(4), #contact input:nth-child(4)::placeholder,
+    #contact input:nth-child(5), #contact input:nth-child(5)::placeholder {
         font-size: 14px;
     }
 

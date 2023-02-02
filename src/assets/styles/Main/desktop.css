@@ -347,7 +347,8 @@ main>button:nth-child(9) {
     top: 0px;
 }
 
-#contact input[type=text] {
+#contact input:nth-child(2), #contact input:nth-child(3),
+#contact input:nth-child(4), #contact input:nth-child(5) {
     width: 26vw;
     height: 2.7777777vw;
     background-color: #FFFFFF;
@@ -358,33 +359,37 @@ main>button:nth-child(9) {
     padding-left: 0.9vw;
 }
 
-#contact input[type=text], #contact input[type=text]::placeholder {
+#contact input:nth-child(2), #contact input:nth-child(2)::placeholder,
+#contact input:nth-child(3), #contact input:nth-child(3)::placeholder,
+#contact input:nth-child(4), #contact input:nth-child(4)::placeholder,
+#contact input:nth-child(5), #contact input:nth-child(5)::placeholder {
     font-size: 1.32vw;
     display: flex;
     align-items: center;
 }
 
-#contact input[type=text]::placeholder {
+#contact input:nth-child(2)::placeholder, #contact input:nth-child(3)::placeholder,
+#contact input:nth-child(4)::placeholder, #contact input:nth-child(5)::placeholder {
     text-transform: uppercase;
     color: #D8D7CE;
 }
 
-#contact input[type=text]:nth-child(2) {
+#contact input:nth-child(2) {
     top: 40px;
     left: 0px;
 }
 
-#contact input[type=text]:nth-child(3) {
+#contact input:nth-child(3) {
     top: 40px;
     left: 27.2vw;
 }
 
-#contact input[type=text]:nth-child(4) {
+#contact input:nth-child(4) {
     top: calc(3.9777777vw + 40px);
     left: 0px;
 }
 
-#contact input[type=text]:nth-child(5) {
+#contact input:nth-child(5) {
     top: calc(3.9777777vw + 40px);
     left: 27.2vw;
 }
