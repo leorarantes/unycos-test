@@ -49,12 +49,10 @@
 .spotlight img {
     width: 9.86547vw;
     min-width: 90px;
-    height: 5.296896vw;
-    min-height: 48px;
 }
 
 .spotlight h3 {
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -88,7 +86,7 @@
     .description {
         width: 90%;
         display: block;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 16px;
         text-align: center;
         color: #858479;
@@ -112,7 +110,7 @@
     }
 
     .spotlight h3 {
-        font-size: 10px;
-        line-height: 13px;
+        font-size: 12px;
+        line-height: 14px;
     }
 }
