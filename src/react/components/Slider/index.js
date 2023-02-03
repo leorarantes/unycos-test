@@ -12,10 +12,51 @@ export default function Slider() {
   React.useEffect(() => {
     async function loadComponent() {
       try {
-        const { data } = await api.getSliderInfo(key);
+        //const { data } = await api.getSliderInfo(key);
+        const data = {
+          spotlights: [
+            {
+              _id: 1,
+              title: "Estilos de natación",
+              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu 
+              lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi 
+              tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque 
+              purus magna, auctor et, sagittis ac.`,
+              image: "https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+              _id: 2,
+              title: "Preparación física",
+              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu 
+              lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi 
+              tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque 
+              purus magna, auctor et, sagittis ac.`,
+              image: "https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+              _id: 3,
+              title: "Entrenar para el éxito",
+              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu 
+              lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi 
+              tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque 
+              purus magna, auctor et, sagittis ac.`,
+              image: "https://images.pexels.com/photos/8688534/pexels-photo-8688534.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            },
+            {
+              _id: 4,
+              title: "Plan de entrenamiento",
+              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu 
+              lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi 
+              tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque 
+              purus magna, auctor et, sagittis ac.`,
+              image: "https://images.pexels.com/photos/1181615/pexels-photo-1181615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            }
+          ]
+        }
         const spotlights = data.spotlights;
         setInfo([...spotlights]);
         setSelectedSpotlight({...spotlights[0]});
+        console.log(data);
       } catch(error) {
         console.log(error);
       }
